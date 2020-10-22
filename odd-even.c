@@ -10,7 +10,7 @@ int main()
     if (a % 2 == 0)
     {   
         a += 3;
-        printf("%d", a + 3);
+        printf("%d", a);
     }
     else
     {
