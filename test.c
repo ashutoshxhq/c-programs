@@ -4,7 +4,8 @@
 
 int main()
 {
-    int i, j, n;
+    int i, j, n ;
+    unsigned long int f = 1;
     scanf("%d", &n);
 
     for (i = 1; i < n; i++)
@@ -15,7 +16,15 @@ int main()
 
             for (j = 1; j < 10; j++)
             {
-                printf("%d * %d = %d\n", i, j, i*j);
+                // 2 * 1 = 2
+                printf("%d * %d = %d\n", i, j, i * j);
+                
+                for (int k = i * j; k > 0; k--)
+                {
+                    f = f * k;
+                }
+                printf("\nFactorial for %d is %d\n",i * j, f);
+                f = 1;
             }
         }
     }
