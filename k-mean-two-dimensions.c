@@ -27,7 +27,7 @@ float calculateDistance(int x1, int x2, int y1, int y2)
 int main()
 {
     int k = 0, tempx = 0, tempy = 0;
-    struct Cordinates lastCentroid[2], data[20] = {{3, 40000}, {3, 35000}, {12, 70000}, {1, 20000}, {4, 35000}, {7, 65000}, {8, 64000}, {5, 55000}, {12, 80000}};
+    struct Cordinates lastCentroid[2], data[20] = {{3, 40000}, {3, 35000}, {12, 40000}, {1, 20000}, {4, 35000}, {7, 65000}, {8, 64000}, {5, 55000}, {12, 80000}};
     struct Centroid centroid[2] = {{{4, 40000}, 0}, {{22, 0}, 0}};
 
     printf("The Cordinates are:\n");
