@@ -12,8 +12,8 @@ void bubbleSortAndPrint(int arr[], int n)
            }
        }
    }
-   printf("\n Even Location Values sorted in reverse order are:");
-   for (int i = n-1; i> 0; i--)
+   printf("\n Sorted in reverse order:");
+   for (int i = n-1; i>= 0; i--)
    {
        printf("%d ",arr[i]);
    }
@@ -28,13 +28,7 @@ int main() {
     {
         scanf("%d",&x[i]);
     }
-    for (int i = 0; i < n; i++)
-    {
-        if(i%2 == 0){
-            y[j] = x[i];
-            j++;
-        }
-    }
-    bubbleSortAndPrint(y,(n/2)+1);
+   
+    bubbleSortAndPrint(x,n);
     return 0;
 }
